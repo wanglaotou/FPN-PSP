@@ -1,0 +1,4 @@
+Log file created at: 2017/12/20 17:45:15
+Running on machine: root0-PR4768GW-240
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+F1220 17:45:15.000582 31469 euclidean_loss_layer.cpp:12] Check failed: bottom[0]->count(1) == bottom[1]->count(1) (38468 vs. 38232) Inputs must have the same dimension.

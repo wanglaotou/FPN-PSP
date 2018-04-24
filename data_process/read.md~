@@ -1,0 +1,28 @@
+cwCC data process v2.0
+date:20171218
+data train format : imgpath N 1 x y w h ...(same with face detect)
+Method:
+1.getLabel.py
+input:scene_ImageFolder.txt(imgpath,label)
+output:label(.txt)
+
+2.getROI.m
+input:scene,roi
+output:RoiImg(.jpg)
+
+3.getPersMap.m	
+input:scene,label
+output:PersMap value(.mat)
+
+4.getRectRoifull.m
+input:label-->labelroi,roi,PersMap
+output:rectroi.txt(imgpath,label,rectValue)(.txt)
+
+5.getDmap4roi.m
+input:rectroi.txt(imgpath,label,rectValue)
+output:Dmap4(.txt)
+
+6.show_labels.py(lyq)
+
+
+

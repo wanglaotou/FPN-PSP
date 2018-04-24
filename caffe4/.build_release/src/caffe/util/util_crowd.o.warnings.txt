@@ -1,0 +1,30 @@
+In file included from ./include/caffe/util/device_alternate.hpp:40:0,
+                 from ./include/caffe/common.hpp:19,
+                 from ./include/caffe/blob.hpp:8,
+                 from ./include/caffe/util/util_crowd.hpp:3,
+                 from src/caffe/util/util_crowd.cpp:2:
+./include/caffe/util/cudnn.hpp: In function ‘const char* cudnnGetErrorString(cudnnStatus_t)’:
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_IN_PROGRESS’ not handled in switch [-Wswitch]
+   switch (status) {
+          ^
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_FP_OVERFLOW’ not handled in switch [-Wswitch]
+src/caffe/util/util_crowd.cpp: In function ‘int caffe::GetSuitableX(int, int, int, int)’:
+src/caffe/util/util_crowd.cpp:158:11: warning: unused variable ‘lef_new’ [-Wunused-variable]
+     float lef_new = mid - float(wid_new)*0.5;
+           ^
+src/caffe/util/util_crowd.cpp: In instantiation of ‘void caffe::TransformDmap(const cv::Mat&, Dtype*) [with Dtype = double]’:
+src/caffe/util/util_crowd.cpp:119:64:   required from here
+src/caffe/util/util_crowd.cpp:112:9: warning: unused variable ‘hei_dmap’ [-Wunused-variable]
+     int hei_dmap = dmap.rows;
+         ^
+src/caffe/util/util_crowd.cpp:113:9: warning: unused variable ‘wid_dmap’ [-Wunused-variable]
+     int wid_dmap = dmap.cols;
+         ^
+src/caffe/util/util_crowd.cpp: In instantiation of ‘void caffe::TransformDmap(const cv::Mat&, Dtype*) [with Dtype = float]’:
+src/caffe/util/util_crowd.cpp:120:63:   required from here
+src/caffe/util/util_crowd.cpp:112:9: warning: unused variable ‘hei_dmap’ [-Wunused-variable]
+     int hei_dmap = dmap.rows;
+         ^
+src/caffe/util/util_crowd.cpp:113:9: warning: unused variable ‘wid_dmap’ [-Wunused-variable]
+     int wid_dmap = dmap.cols;
+         ^

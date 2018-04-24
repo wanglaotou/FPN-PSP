@@ -1,0 +1,4 @@
+Log file created at: 2017/12/20 14:17:56
+Running on machine: root0-PR4768GW-240
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+F1220 14:17:56.654222 17488 crowd_data_layer.cpp:199] Check failed: img_height <= 900 (976 vs. 900) 

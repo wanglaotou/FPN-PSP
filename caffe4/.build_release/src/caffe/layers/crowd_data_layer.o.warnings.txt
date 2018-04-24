@@ -1,0 +1,42 @@
+In file included from ./include/caffe/util/device_alternate.hpp:40:0,
+                 from ./include/caffe/common.hpp:19,
+                 from ./include/caffe/blob.hpp:8,
+                 from ./include/caffe/layers/crowd_data_layer.hpp:10,
+                 from src/caffe/layers/crowd_data_layer.cpp:12:
+./include/caffe/util/cudnn.hpp: In function ‘const char* cudnnGetErrorString(cudnnStatus_t)’:
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_IN_PROGRESS’ not handled in switch [-Wswitch]
+   switch (status) {
+          ^
+./include/caffe/util/cudnn.hpp:21:10: warning: enumeration value ‘CUDNN_STATUS_RUNTIME_FP_OVERFLOW’ not handled in switch [-Wswitch]
+src/caffe/layers/crowd_data_layer.cpp: In instantiation of ‘void caffe::CrowdDataLayer<Dtype>::DataLayerSetUp(const std::vector<caffe::Blob<Dtype>*>&, const std::vector<caffe::Blob<Dtype>*>&) [with Dtype = float]’:
+src/caffe/layers/crowd_data_layer.cpp:391:1:   required from here
+src/caffe/layers/crowd_data_layer.cpp:163:9: warning: unused variable ‘extCols’ [-Wunused-variable]
+     int extCols = (64 - restCols)%64;
+         ^
+src/caffe/layers/crowd_data_layer.cpp:164:9: warning: unused variable ‘extRows’ [-Wunused-variable]
+     int extRows = (64 - restRows)%64;
+         ^
+src/caffe/layers/crowd_data_layer.cpp: In instantiation of ‘void caffe::CrowdDataLayer<Dtype>::load_batch(caffe::Batch<Dtype>*) [with Dtype = float]’:
+src/caffe/layers/crowd_data_layer.cpp:391:1:   required from here
+src/caffe/layers/crowd_data_layer.cpp:214:13: warning: unused variable ‘extCols’ [-Wunused-variable]
+         int extCols = (64 - restCols)%64;
+             ^
+src/caffe/layers/crowd_data_layer.cpp:215:13: warning: unused variable ‘extRows’ [-Wunused-variable]
+         int extRows = (64 - restRows)%64;
+             ^
+src/caffe/layers/crowd_data_layer.cpp: In instantiation of ‘void caffe::CrowdDataLayer<Dtype>::DataLayerSetUp(const std::vector<caffe::Blob<Dtype>*>&, const std::vector<caffe::Blob<Dtype>*>&) [with Dtype = double]’:
+src/caffe/layers/crowd_data_layer.cpp:391:1:   required from here
+src/caffe/layers/crowd_data_layer.cpp:163:9: warning: unused variable ‘extCols’ [-Wunused-variable]
+     int extCols = (64 - restCols)%64;
+         ^
+src/caffe/layers/crowd_data_layer.cpp:164:9: warning: unused variable ‘extRows’ [-Wunused-variable]
+     int extRows = (64 - restRows)%64;
+         ^
+src/caffe/layers/crowd_data_layer.cpp: In instantiation of ‘void caffe::CrowdDataLayer<Dtype>::load_batch(caffe::Batch<Dtype>*) [with Dtype = double]’:
+src/caffe/layers/crowd_data_layer.cpp:391:1:   required from here
+src/caffe/layers/crowd_data_layer.cpp:214:13: warning: unused variable ‘extCols’ [-Wunused-variable]
+         int extCols = (64 - restCols)%64;
+             ^
+src/caffe/layers/crowd_data_layer.cpp:215:13: warning: unused variable ‘extRows’ [-Wunused-variable]
+         int extRows = (64 - restRows)%64;
+             ^

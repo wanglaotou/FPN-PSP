@@ -1,0 +1,29 @@
+cwCC data process v2.0
+date:20171218
+data train format : imgpath N 1 x y w h ...(same with face detect)
+Method:
+1.getLabel.py
+input:scene_ImageFolder.txt(imgpath,label)人工标的点信息转为一张图片对应一个label文件信息
+output:label(.txt)
+
+2.getROI.m
+input:scene,roi（根据ROI信息，将原图crop 得到最大外接矩形）
+output:RoiImg(.jpg)
+
+3.getPersMap.m	（对现有新增场景22->53,制作透视图信息）
+input:scene,label
+output:PersMap value(.mat)
+
+4.getRectRoifull.m（根据透视图以及roi 信息，得到训练v2.0 所需的标注;）
+input:label-->labelroi,roi,PersMap
+output:rectroi.txt(imgpath,label,rectValue)(.txt)
+
+5.getDmap4roi.m （根据v2.0的标注，离线生成dmap信息,目前生成适合mcnn的 dmap4 以及适合sacnn 的 dmap8）
+input:rectroi.txt(imgpath,label,rectValue)
+output:Dmap4(.txt)
+
+6.show_labels.py(lyq)(show v2.0)
+usage: python show_labels.py -annot xx.list (-shf 1/0)
+
+
+
